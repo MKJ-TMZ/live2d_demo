@@ -163,7 +163,7 @@ function initModel(waifuPath, type) {
         //window.open('https://imjad.cn/archives/lab/add-dynamic-poster-girl-with-live2d-to-your-blog-02');
         window.open(live2d_settings.aboutPageUrl);
     });*/
-    $('.waifu-tool .fui-info-circle')..click(function (){
+    $('.waifu-tool .fui-info-circle').click(function (){
 			if (window.Asteroids) {
 				if (!window.ASTEROIDSPLAYERS) window.ASTEROIDSPLAYERS = [];
 				window.ASTEROIDSPLAYERS.push(new Asteroids());
