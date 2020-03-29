@@ -31,7 +31,7 @@ live2d_settings['modelTexturesId']      = 53;           // 默认材质 ID，可
 // 工具栏设置
 live2d_settings['showToolMenu']         = true;         // 显示 工具栏          ，可选 true(真), false(假)
 live2d_settings['canCloseLive2d']       = true;         // 显示 关闭看板娘  按钮，可选 true(真), false(假)
-live2d_settings['canSwitchModel']       = false;         // 显示 模型切换    按钮，可选 true(真), false(假)
+live2d_settings['canSwitchModel']       = true;         // 显示 模型切换    按钮，可选 true(真), false(假)
 live2d_settings['canSwitchTextures']    = true;         // 显示 材质切换    按钮，可选 true(真), false(假)
 live2d_settings['canSwitchHitokoto']    = true;         // 显示 一言切换    按钮，可选 true(真), false(假)
 live2d_settings['canTakeScreenshot']    = true;         // 显示 看板娘截图  按钮，可选 true(真), false(假)
@@ -159,11 +159,11 @@ function initModel(waifuPath, type) {
         window.location = live2d_settings.homePageUrl;
     });
     
-    $('.waifu-tool .fui-info-circle').click(function (){
+    /*$('.waifu-tool .fui-info-circle').click(function (){
         //window.open('https://imjad.cn/archives/lab/add-dynamic-poster-girl-with-live2d-to-your-blog-02');
         window.open(live2d_settings.aboutPageUrl);
-    });
-    /*$('.waifu-tool .fui-info-circle').click(function (){
+    });*/
+    $('.waifu-tool .fui-info-circle').click(function (){
 			if (window.Asteroids) {
 				if (!window.ASTEROIDSPLAYERS) window.ASTEROIDSPLAYERS = [];
 				window.ASTEROIDSPLAYERS.push(new Asteroids());
@@ -172,7 +172,7 @@ function initModel(waifuPath, type) {
 				script.src = "https://cdn.jsdelivr.net/gh/GalaxyMimi/CDN/asteroids.js";
 				document.head.appendChild(script);
 			}
-		});*/
+		});
     
     if (typeof(waifuPath) == "object") loadTipsMessage(waifuPath); else {
         $.ajax({
