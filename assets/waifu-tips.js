@@ -184,7 +184,7 @@ function initModel(waifuPath, type) {
     }
     
     if (!live2d_settings.showToolMenu) $('.waifu-tool').hide();
-    if (!live2d_settings.canCloseLive2d) $('.waifu-tool .fui-cross').hide();
+    //if (!live2d_settings.canCloseLive2d) $('.waifu-tool .fui-cross').hide();
     if (!live2d_settings.canSwitchModel) $('.waifu-tool .fui-eye').hide();
     if (!live2d_settings.canSwitchTextures) $('.waifu-tool .fui-user').hide();
     if (!live2d_settings.canSwitchHitokoto) $('.waifu-tool .fui-chat').hide();
